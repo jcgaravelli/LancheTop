@@ -9,7 +9,13 @@
 import Moya
 
 enum ServiceType {
+    case lanches
     case lanche
+    case ingredientes
+    case ingredienteDeLanche(Int?)
+    case promocao
+    case fazerPedido
+    case verPedido
 }
 
 // MARK: - TargetType Protocol Implementation
@@ -18,16 +24,42 @@ extension ServiceType: TargetType  {
     var baseURL: URL { return URL(string: Constant.baseURL)! }
     var path: String {
         switch self {
-        case .lanche:
+        case .lanches:
             return "/lanche"
+        case .lanche:
+            return "/lanche/:id_sandwich"
+        case .ingredientes:
+            return "/ingrediente"
+        case .ingredienteDeLanche:
+            return "/ingrediente/de/"
+        case .promocao:
+            return "/promocao"
+        case .verPedido:
+            return "/pedido"
+        case .fazerPedido:
+            return "/pedido/:id_sandwich"
         }
     }
     
     var method: Moya.Method {
-        return .get
+        switch self {
+        case .fazerPedido:
+            return .put
+        default:
+            return .get
+        }
     }
     var parameters: [String: Any]? {
-        return nil
+        switch self {
+        case .fazerPedido:
+            return nil
+        case .ingredienteDeLanche(let idLanche):
+            var params: [String : AnyObject] = [:]
+            params["id"] = idLanche as AnyObject
+            return params
+        default:
+            return nil
+        }
     }
     
     var parameterEncoding: ParameterEncoding {

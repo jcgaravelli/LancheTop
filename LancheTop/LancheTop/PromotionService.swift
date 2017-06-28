@@ -1,8 +1,8 @@
 //
-//  SandwicheService.swift
+//  PromotionService.swift
 //  LancheTop
 //
-//  Created by Júlio César Garavelli on 26/06/17.
+//  Created by Júlio César Garavelli on 28/06/17.
 //  Copyright © 2017 Júlio Garavelli. All rights reserved.
 //
 
@@ -10,24 +10,24 @@ import Moya
 import ObjectMapper
 import Moya_ObjectMapper
 
-class SandwicheService {
+class PromotionService {
     
-    static let shared = SandwicheService()
+    static let shared = PromotionService()
     
     let provider = MoyaProvider<ServiceType>()
     
-    /// Chamada de lanches
+    /// Chamada de promoções
     ///
     /// - Parameters:
-    ///   - success: APllI retorna uma lista de lanches
+    ///   - success: APllI retorna uma lista de Promoções
     ///   - failure: API retorna um erro, o chamador da função deve tratar
-    func lanches(success: @escaping (_ Sandwiche: [Sandwiche]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){
-        provider.request(.lanches) { result in
+    func promocoes(success: @escaping (_ Sandwiche: [Promotion]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){
+        provider.request(.ingredientes) { result in
             switch result {
             case let .success(response):
                 do {
-                    let lanches = try response.mapArray(Sandwiche.self)
-                    success(lanches)
+                    let promocoes = try response.mapArray(Promotion.self)
+                    success(promocoes)
                 } catch {
                     failure(nil)
                 }
@@ -37,4 +37,3 @@ class SandwicheService {
         }
     }
 }
-

@@ -24,7 +24,7 @@ class SandwicheViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func getSandwiches() {
-        SandwicheService.shared.lanche(
+        SandwicheService.shared.lanches(
             success: { lanches in
             self.lanches = lanches
             self.sandwichesCollectionView.reloadData()
