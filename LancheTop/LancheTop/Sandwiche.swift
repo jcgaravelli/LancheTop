@@ -6,25 +6,22 @@
 //  Copyright © 2017 Júlio Garavelli. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
-class Sandwiche: NSObject {
+class Sandwiche: Mappable {
 
-    var id: Int!
-    var name: String!
+    var id: Int?
+    var name: String?
     var ingredients: [Int] = []
-    var image: String!
+    var image: String?
     
-    override init() {
-        super.init()
-    }
+    // MARK: JSON
+    required init?(map: Map) { }
     
-    init(dict: Dictionary<String, Any>){
-        super.init()
-        
-        self.id = dict[""] as! Int
-        self.name = dict["name"] as! String
-        self.ingredients = dict["ingredients"] as! [Int]
-        self.image = dict["image"] as! String
+    func mapping(map: Map) {
+        self.id <- map["id"]
+        self.name <- map["name"] 
+        self.ingredients <- map["ingredients"]
+        self.image <- map["image"]
     }
 }

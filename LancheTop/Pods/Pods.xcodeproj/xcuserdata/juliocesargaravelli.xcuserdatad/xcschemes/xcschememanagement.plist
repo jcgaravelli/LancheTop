@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Moya-ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,12 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>506667F48BA7B55F554F0484BA286626</key>
+		<key>2F0C0F810568D3E82219429D9D870F04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>52ACA0236F086E72B74F0A090A743D41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6542A71B760A69B04F6360DADA62527C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B27F1F7B862582A90168D876BFA178C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C6DBC0D3D96A8EE25D403290E4BD4843</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF9F83025EEE1E89490800018F391A28</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,24 +6,20 @@
 //  Copyright © 2017 Júlio Garavelli. All rights reserved.
 //
 
-import UIKit
+import ObjectMapper
 
-class Promotion: NSObject {
+class Promotion: Mappable {
 
-    var id: Int!
-    var name: String!
-    var descript: String!
+    var id: Int?
+    var name: String?
+    var descript: String?
     
-    override init() {
-        super.init()
-    }
+    // MARK: JSON
+    required init?(map: Map) { }
     
-    init(dict: Dictionary<String, Any>){
-        super.init()
-        
-        self.id = dict[""] as! Int
-        self.name = dict["name"] as! String
-        self.descript = dict[""] as! String
-        
+    func mapping(map: Map) {        
+        self.id <- map["id"]
+        self.name <- map["name"]
+        self.descript <- map["description"]
     }
 }
