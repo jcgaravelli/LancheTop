@@ -24,6 +24,7 @@
 		D297378D1F014A1000F7D2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D297378B1F014A1000F7D2D7 /* LaunchScreen.storyboard */; };
 		D29737981F014A1000F7D2D7 /* LancheTopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29737971F014A1000F7D2D7 /* LancheTopTests.swift */; };
 		D29737A31F014A1000F7D2D7 /* LancheTopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29737A21F014A1000F7D2D7 /* LancheTopUITests.swift */; };
+		D2B69C031F034F0D0094F0BF /* SandwicheCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B69C021F034F0D0094F0BF /* SandwicheCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D297379E1F014A1000F7D2D7 /* LancheTopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LancheTopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29737A21F014A1000F7D2D7 /* LancheTopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancheTopUITests.swift; sourceTree = "<group>"; };
 		D29737A41F014A1000F7D2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B69C021F034F0D0094F0BF /* SandwicheCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwicheCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			children = (
 				D29737B31F01550600F7D2D7 /* storyboard */,
 				D27F09A41F01A15400DA7B55 /* SandwicheViewController.swift */,
+				D2B69C021F034F0D0094F0BF /* SandwicheCollectionViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				D214A56B1F019B49009A322B /* SandwicheService.swift in Sources */,
 				D29737831F014A1000F7D2D7 /* AppDelegate.swift in Sources */,
 				D214A5661F019612009A322B /* Sandwiche.swift in Sources */,
+				D2B69C031F034F0D0094F0BF /* SandwicheCollectionViewCell.swift in Sources */,
 				D27F09A31F019E3E00DA7B55 /* Promotion.swift in Sources */,
 				D27F09A51F01A15400DA7B55 /* SandwicheViewController.swift in Sources */,
 				D24DC8481F028BDD00B98411 /* ServiceType.swift in Sources */,
