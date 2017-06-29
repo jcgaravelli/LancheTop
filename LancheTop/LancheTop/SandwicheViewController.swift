@@ -6,19 +6,21 @@
 //  Copyright © 2017 Júlio Garavelli. All rights reserved.
 //
 
+import UIKit
 import Moya
 
-class SandwicheViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SandwicheViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var sandwichesCollectionView: UICollectionView!    
+    @IBOutlet weak var sandwicheTableView: UITableView!
+    
     
     fileprivate var lanches: [Sandwiche] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sandwichesCollectionView.delegate = self
-        sandwichesCollectionView.dataSource = self
+        sandwicheTableView.delegate = self
+        sandwicheTableView.dataSource = self
         
         getSandwiches()
     }
@@ -26,29 +28,28 @@ class SandwicheViewController: UIViewController, UICollectionViewDelegate, UICol
     func getSandwiches() {
         SandwicheService.shared.lanches(
             success: { lanches in
-            self.lanches = lanches
-            self.sandwichesCollectionView.reloadData()
+                self.lanches = lanches
+                self.sandwicheTableView.reloadData()
         }, failure: { (error) in
             print (error ?? "")
         })
     }
+
     
+    // MARK: - Delegate - Datasource TableView
     
-    // MARK: - Delegate - Datasource CollectionView
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.lanches.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SandwicheCollectionViewCell", for: indexPath) as! SandwicheCollectionViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SandwicheTableViewCell", for: indexPath) as! SandwicheTableViewCell
         cell.loadInformation(lanches[indexPath.row])
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Sandwiche selected: \(self.lanches[indexPath.row].name!)")
     }
-    
-    
 }
 

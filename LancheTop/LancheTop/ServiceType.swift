@@ -10,12 +10,13 @@ import Moya
 
 enum ServiceType {
     case lanches
-    case lanche
+    case lanche(id_sandwiche: Int)
     case ingredientes
-    case ingredienteDeLanche(Int?)
+    case ingredienteDeLanche(id_sandwiche: Int)
     case promocao
-    case fazerPedido
     case verPedido
+    case fazerPedido(id_sandwiche: Int)
+    
 }
 
 // MARK: - TargetType Protocol Implementation
@@ -26,18 +27,18 @@ extension ServiceType: TargetType  {
         switch self {
         case .lanches:
             return "/lanche"
-        case .lanche:
-            return "/lanche/:id_sandwich"
+        case .lanche(let id_sandwiche):
+            return "/lanche/\(id_sandwiche)"
         case .ingredientes:
             return "/ingrediente"
-        case .ingredienteDeLanche:
-            return "/ingrediente/de/"
+        case .ingredienteDeLanche(let id_sandwiche):
+            return "/ingrediente/de/\(id_sandwiche)"
         case .promocao:
             return "/promocao"
         case .verPedido:
             return "/pedido"
-        case .fazerPedido:
-            return "/pedido/:id_sandwich"
+        case .fazerPedido(let id_sandwiche):
+            return "/pedido/\(id_sandwiche)"
         }
     }
     

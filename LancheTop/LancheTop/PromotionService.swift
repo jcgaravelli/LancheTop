@@ -16,9 +16,9 @@ class PromotionService {
     
     let provider = MoyaProvider<ServiceType>()
     
-    /// Chamada de promoções
+    /// Chamada de Promoções
     ///
-    /// - Parameters:
+    ///- Parameters:
     ///   - success: APllI retorna uma lista de Promoções
     ///   - failure: API retorna um erro, o chamador da função deve tratar
     func promocoes(success: @escaping (_ Sandwiche: [Promotion]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){

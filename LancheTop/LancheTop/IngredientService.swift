@@ -18,32 +18,11 @@ class IngredientService {
     
     /// Chamada de Ingredientes
     ///
-    /// - Parameters:
+    ///- Parameters:
     ///   - success: APllI retorna uma lista de Ingredientes
     ///   - failure: API retorna um erro, o chamador da função deve tratar
     func ingredientes(success: @escaping (_ Sandwiche: [Ingredient]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){
         provider.request(.ingredientes) { result in
-            switch result {
-            case let .success(response):
-                do {
-                    let ingredientes = try response.mapArray(Ingredient.self)
-                    success(ingredientes)
-                } catch {
-                    failure(nil)
-                }
-            case let .failure(error):
-                failure(error)
-            }
-        }
-    }
-    
-    /// Chamada de Ingredientes do Sandwiche
-    ///
-    /// - Parameters:
-    ///   - success: APllI retorna uma lista de Ingredientes do Sandwiche
-    ///   - failure: API retorna um erro, o chamador da função deve tratar
-    func ingredienteDeLanche(idLanche: Int, success: @escaping (_ Sandwiche: [Ingredient]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){
-        provider.request(.ingredienteDeLanche(idLanche)) { result in
             switch result {
             case let .success(response):
                 do {
