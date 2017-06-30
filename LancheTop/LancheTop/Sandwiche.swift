@@ -14,6 +14,8 @@ class Sandwiche: Mappable {
     var name: String?
     var ingredients: [Int] = []
     var image: String?
+    var value: Float?
+    var descript: String?
     
     // MARK: JSON
     required init?(map: Map) { }
@@ -23,5 +25,8 @@ class Sandwiche: Mappable {
         self.name <- map["name"] 
         self.ingredients <- map["ingredients"]
         self.image <- map["image"]
+        self.value <- map["value"]
+        self.descript <- map["descript"]
     }
 }
+
