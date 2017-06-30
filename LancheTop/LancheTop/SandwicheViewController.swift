@@ -13,15 +13,17 @@ class SandwicheViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var sandwicheTableView: UITableView!
     
-    
     fileprivate var lanches: [Sandwiche] = []
+    fileprivate var ingredientes: [Ingredient] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         sandwicheTableView.delegate = self
         sandwicheTableView.dataSource = self
+        sandwicheTableView.tableFooterView = UIView()
         
+        getIngredientes()
         getSandwiches()
     }
     
@@ -29,6 +31,16 @@ class SandwicheViewController: UIViewController, UITableViewDelegate, UITableVie
         SandwicheService.shared.lanches(
             success: { lanches in
                 self.lanches = lanches
+                self.sandwicheTableView.reloadData()
+        }, failure: { (error) in
+            print (error ?? "")
+        })
+    }
+    
+    func getIngredientes() {
+        IngredientService.shared.ingredientes(
+            success: { ingredientes in
+                self.ingredientes = ingredientes
                 self.sandwicheTableView.reloadData()
         }, failure: { (error) in
             print (error ?? "")
@@ -44,12 +56,16 @@ class SandwicheViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SandwicheTableViewCell", for: indexPath) as! SandwicheTableViewCell
-        cell.loadInformation(lanches[indexPath.row])
+        cell.loadInformation(lanches[indexPath.row], ingredientes: self.ingredientes)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Sandwiche selected: \(self.lanches[indexPath.row].name!)")
+        let cell = tableView.cellForRow(at: indexPath) as! SandwicheTableViewCell
+        let ingredientesVC = self.storyboard?.instantiateViewController(withIdentifier: "IngredientViewController") as! IngredientViewController
+        ingredientesVC.loadInformation(cell.getLanche())
+        self.navigationController?.show(ingredientesVC, sender: self)
     }
 }
 
