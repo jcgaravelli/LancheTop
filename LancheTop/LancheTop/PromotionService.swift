@@ -22,7 +22,7 @@ class PromotionService {
     ///   - success: APllI retorna uma lista de Promoções
     ///   - failure: API retorna um erro, o chamador da função deve tratar
     func promocoes(success: @escaping (_ Sandwiche: [Promotion]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){
-        provider.request(.ingredientes) { result in
+        provider.request(.promocao) { result in
             switch result {
             case let .success(response):
                 do {

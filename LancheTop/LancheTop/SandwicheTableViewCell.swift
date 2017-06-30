@@ -25,7 +25,7 @@ class SandwicheTableViewCell: UITableViewCell {
     
     func loadInformation(_ lanche: Sandwiche, ingredientes: [Ingredient]) {
         self.lanche = lanche
-        var description = "Ingredientes:"
+        var description = "Ingredientes:\n"
         var price: Float = 0.0
         sandwicheName.text = lanche.name
         sandwicheImage.image = lanche.image!.getImageWithURL()
