@@ -31,7 +31,7 @@ class IngredientViewController: UIViewController, UITableViewDelegate, UITableVi
         sandwicheName.text = lanche?.name
         sandwicheImage.image = lanche?.image!.getImageWithURL()
         descriptionLabel.text = lanche?.descript
-        priceLabel.text = "R$ \(lanche?.value! ?? 0.00)"
+        setTotalValue((lanche?.value!)!)
         getPromotions()
     }
     
@@ -70,6 +70,57 @@ class IngredientViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "PromotionTableViewCell", for: indexPath) as! PromotionTableViewCell
         cell.loadInformation(self.promocoes[indexPath.row])
         return cell
+    }
+    
+    
+    // Inserir total com promocao
+    func setTotalValue(_ value: Float) {
+        //Pega valor com promocao
+        if isPromotion1() {
+            lanche?.value = (lanche?.value)! - (0.1 * (lanche?.value)!)
+        }
+        lanche?.value = (lanche?.value)! - (Float(qtdPromotion2()) * 3.0)
+        lanche?.value = (lanche?.value)! - (Float(qtdPromotion3()) * 1.5)
+        priceLabel.text = "R$ \(lanche?.value! ?? 0.00)"
+    }
+    
+    
+    // Esta com alguma promoção?
+    func isPromotion1() -> Bool {
+        var hasBacon = false
+        var hasSalad = false
+        
+        for item in (self.lanche?.ingredients)! {
+            if item == 1 {
+                hasSalad = true
+            }
+            if item == 2 {
+                hasBacon = true
+            }
+        }
+        return !hasBacon && hasSalad
+    }
+    
+    func qtdPromotion2() -> Int {
+        var count = 0
+        for item in (self.lanche?.ingredients)! {
+            if item == 3 {
+                //possue carne (Hamburguer?)
+                count = count + 1
+            }
+        }
+        return Int(round(Double(count / 3)))
+    }
+    
+    func qtdPromotion3() -> Int {
+        var count = 0
+        for item in (self.lanche?.ingredients)! {
+            if item == 5 {
+                //possue queijo
+                count = count + 1
+            }
+        }
+        return Int(round(Double(count / 3)))
     }
     
 }
