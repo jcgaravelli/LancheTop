@@ -14,24 +14,28 @@
 		D214A5681F019954009A322B /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214A5671F019954009A322B /* Ingredient.swift */; };
 		D214A56B1F019B49009A322B /* SandwicheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214A56A1F019B49009A322B /* SandwicheService.swift */; };
 		D214A56D1F019B68009A322B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D214A56C1F019B68009A322B /* Alamofire.framework */; };
+		D21E91891F099F5700C1DE2B /* IngredientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E91881F099F5700C1DE2B /* IngredientListViewController.swift */; };
+		D21E918B1F099FA300C1DE2B /* IngredientListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E918A1F099FA300C1DE2B /* IngredientListTableViewCell.swift */; };
 		D21F53271F060F750045FB02 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21F53261F060F750045FB02 /* Order.swift */; };
 		D24301401F0688A500A7061C /* PromotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243013F1F0688A500A7061C /* PromotionTableViewCell.swift */; };
+		D24301441F06C71F00A7061C /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24301431F06C71F00A7061C /* CartTableViewCell.swift */; };
+		D24301461F06CD5000A7061C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24301451F06CD5000A7061C /* CartViewController.swift */; };
 		D24DC8481F028BDD00B98411 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DC8471F028BDD00B98411 /* ServiceType.swift */; };
 		D24DC84B1F028C4100B98411 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DC84A1F028C4100B98411 /* Constant.swift */; };
 		D2500F711F0367D400FF5212 /* IngredientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2500F701F0367D400FF5212 /* IngredientService.swift */; };
 		D2500F731F0369EC00FF5212 /* PromotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2500F721F0369EC00FF5212 /* PromotionService.swift */; };
-		D2500F751F036A5500FF5212 /* RequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2500F741F036A5500FF5212 /* RequestServices.swift */; };
+		D2500F751F036A5500FF5212 /* OrderServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2500F741F036A5500FF5212 /* OrderServices.swift */; };
 		D27F09A31F019E3E00DA7B55 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F09A21F019E3E00DA7B55 /* Promotion.swift */; };
-		D27F09A51F01A15400DA7B55 /* SandwicheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F09A41F01A15400DA7B55 /* SandwicheViewController.swift */; };
+		D27F09A51F01A15400DA7B55 /* HomeSandwicheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F09A41F01A15400DA7B55 /* HomeSandwicheViewController.swift */; };
 		D29737831F014A1000F7D2D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29737821F014A1000F7D2D7 /* AppDelegate.swift */; };
 		D29737881F014A1000F7D2D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29737861F014A1000F7D2D7 /* Main.storyboard */; };
 		D297378A1F014A1000F7D2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D29737891F014A1000F7D2D7 /* Assets.xcassets */; };
 		D297378D1F014A1000F7D2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D297378B1F014A1000F7D2D7 /* LaunchScreen.storyboard */; };
 		D29737981F014A1000F7D2D7 /* LancheTopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29737971F014A1000F7D2D7 /* LancheTopTests.swift */; };
 		D29737A31F014A1000F7D2D7 /* LancheTopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29737A21F014A1000F7D2D7 /* LancheTopUITests.swift */; };
-		D2AE58341F052B58005935F2 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE58331F052B58005935F2 /* IngredientViewController.swift */; };
+		D2AE58341F052B58005935F2 /* SandwicheIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE58331F052B58005935F2 /* SandwicheIngredientViewController.swift */; };
 		D2AF623A1F03E029008D80D1 /* SandwichePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF62391F03E029008D80D1 /* SandwichePresenter.swift */; };
-		D2AF623C1F043EBD008D80D1 /* SandwicheTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF623B1F043EBD008D80D1 /* SandwicheTableViewCell.swift */; };
+		D2AF623C1F043EBD008D80D1 /* HomeSandwicheTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF623B1F043EBD008D80D1 /* HomeSandwicheTableViewCell.swift */; };
 		D2DEA6CF1F04AC2C00DCD294 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEA6CE1F04AC2C00DCD294 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,15 +70,19 @@
 		D214A5671F019954009A322B /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		D214A56A1F019B49009A322B /* SandwicheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwicheService.swift; sourceTree = "<group>"; };
 		D214A56C1F019B68009A322B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/LancheTop-aepabagkqpquzzgcopeioahyjehk/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		D21E91881F099F5700C1DE2B /* IngredientListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientListViewController.swift; sourceTree = "<group>"; };
+		D21E918A1F099FA300C1DE2B /* IngredientListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientListTableViewCell.swift; sourceTree = "<group>"; };
 		D21F53261F060F750045FB02 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		D243013F1F0688A500A7061C /* PromotionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionTableViewCell.swift; sourceTree = "<group>"; };
+		D24301431F06C71F00A7061C /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		D24301451F06CD5000A7061C /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		D24DC8471F028BDD00B98411 /* ServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
 		D24DC84A1F028C4100B98411 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D2500F701F0367D400FF5212 /* IngredientService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientService.swift; sourceTree = "<group>"; };
 		D2500F721F0369EC00FF5212 /* PromotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionService.swift; sourceTree = "<group>"; };
-		D2500F741F036A5500FF5212 /* RequestServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestServices.swift; sourceTree = "<group>"; };
+		D2500F741F036A5500FF5212 /* OrderServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderServices.swift; sourceTree = "<group>"; };
 		D27F09A21F019E3E00DA7B55 /* Promotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
-		D27F09A41F01A15400DA7B55 /* SandwicheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwicheViewController.swift; sourceTree = "<group>"; };
+		D27F09A41F01A15400DA7B55 /* HomeSandwicheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSandwicheViewController.swift; sourceTree = "<group>"; };
 		D297377F1F014A1000F7D2D7 /* LancheTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LancheTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29737821F014A1000F7D2D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D29737871F014A1000F7D2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,9 +95,9 @@
 		D297379E1F014A1000F7D2D7 /* LancheTopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LancheTopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29737A21F014A1000F7D2D7 /* LancheTopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancheTopUITests.swift; sourceTree = "<group>"; };
 		D29737A41F014A1000F7D2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2AE58331F052B58005935F2 /* IngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		D2AE58331F052B58005935F2 /* SandwicheIngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwicheIngredientViewController.swift; sourceTree = "<group>"; };
 		D2AF62391F03E029008D80D1 /* SandwichePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwichePresenter.swift; sourceTree = "<group>"; };
-		D2AF623B1F043EBD008D80D1 /* SandwicheTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwicheTableViewCell.swift; sourceTree = "<group>"; };
+		D2AF623B1F043EBD008D80D1 /* HomeSandwicheTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSandwicheTableViewCell.swift; sourceTree = "<group>"; };
 		D2DEA6CE1F04AC2C00DCD294 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +172,7 @@
 				D214A56A1F019B49009A322B /* SandwicheService.swift */,
 				D2500F701F0367D400FF5212 /* IngredientService.swift */,
 				D2500F721F0369EC00FF5212 /* PromotionService.swift */,
-				D2500F741F036A5500FF5212 /* RequestServices.swift */,
+				D2500F741F036A5500FF5212 /* OrderServices.swift */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -248,11 +256,12 @@
 		D29737B11F01536100F7D2D7 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				D29737B31F01550600F7D2D7 /* storyboard */,
-				D27F09A41F01A15400DA7B55 /* SandwicheViewController.swift */,
-				D2AF623B1F043EBD008D80D1 /* SandwicheTableViewCell.swift */,
-				D2AE58331F052B58005935F2 /* IngredientViewController.swift */,
-				D243013F1F0688A500A7061C /* PromotionTableViewCell.swift */,
+				D2BE2A631F0A7EC900D341F1 /* ingredient */,
+				D2BE2A621F0A7EC000D341F1 /* promotion */,
+				D2BE2A601F0A7E5C00D341F1 /* cart */,
+				D2BE2A5E1F0A7E0900D341F1 /* storyboard */,
+				D2BE2A5C1F0A7D8D00D341F1 /* home */,
+				D2AE58331F052B58005935F2 /* SandwicheIngredientViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -268,7 +277,33 @@
 			name = model;
 			sourceTree = "<group>";
 		};
-		D29737B31F01550600F7D2D7 /* storyboard */ = {
+		D29737B41F01551C00F7D2D7 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				D29737891F014A1000F7D2D7 /* Assets.xcassets */,
+				D297378E1F014A1000F7D2D7 /* Info.plist */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		D2BE2A5C1F0A7D8D00D341F1 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D2BE2A5D1F0A7DDE00D341F1 /* cell */,
+				D27F09A41F01A15400DA7B55 /* HomeSandwicheViewController.swift */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		D2BE2A5D1F0A7DDE00D341F1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D2AF623B1F043EBD008D80D1 /* HomeSandwicheTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		D2BE2A5E1F0A7E0900D341F1 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				D29737861F014A1000F7D2D7 /* Main.storyboard */,
@@ -277,13 +312,54 @@
 			name = storyboard;
 			sourceTree = "<group>";
 		};
-		D29737B41F01551C00F7D2D7 /* assets */ = {
+		D2BE2A601F0A7E5C00D341F1 /* cart */ = {
 			isa = PBXGroup;
 			children = (
-				D29737891F014A1000F7D2D7 /* Assets.xcassets */,
-				D297378E1F014A1000F7D2D7 /* Info.plist */,
+				D2BE2A611F0A7EA200D341F1 /* cell */,
+				D24301451F06CD5000A7061C /* CartViewController.swift */,
 			);
-			name = assets;
+			name = cart;
+			sourceTree = "<group>";
+		};
+		D2BE2A611F0A7EA200D341F1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D24301431F06C71F00A7061C /* CartTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		D2BE2A621F0A7EC000D341F1 /* promotion */ = {
+			isa = PBXGroup;
+			children = (
+				D2BE2A651F0A847100D341F1 /* cell */,
+			);
+			name = promotion;
+			sourceTree = "<group>";
+		};
+		D2BE2A631F0A7EC900D341F1 /* ingredient */ = {
+			isa = PBXGroup;
+			children = (
+				D2BE2A641F0A7F1000D341F1 /* cell */,
+				D21E91881F099F5700C1DE2B /* IngredientListViewController.swift */,
+			);
+			name = ingredient;
+			sourceTree = "<group>";
+		};
+		D2BE2A641F0A7F1000D341F1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D21E918A1F099FA300C1DE2B /* IngredientListTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		D2BE2A651F0A847100D341F1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				D243013F1F0688A500A7061C /* PromotionTableViewCell.swift */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,22 +646,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AF623C1F043EBD008D80D1 /* SandwicheTableViewCell.swift in Sources */,
+				D2AF623C1F043EBD008D80D1 /* HomeSandwicheTableViewCell.swift in Sources */,
+				D21E91891F099F5700C1DE2B /* IngredientListViewController.swift in Sources */,
+				D21E918B1F099FA300C1DE2B /* IngredientListTableViewCell.swift in Sources */,
 				D214A5681F019954009A322B /* Ingredient.swift in Sources */,
 				D21F53271F060F750045FB02 /* Order.swift in Sources */,
 				D214A56B1F019B49009A322B /* SandwicheService.swift in Sources */,
 				D2500F731F0369EC00FF5212 /* PromotionService.swift in Sources */,
 				D29737831F014A1000F7D2D7 /* AppDelegate.swift in Sources */,
 				D214A5661F019612009A322B /* Sandwiche.swift in Sources */,
-				D2500F751F036A5500FF5212 /* RequestServices.swift in Sources */,
+				D2500F751F036A5500FF5212 /* OrderServices.swift in Sources */,
+				D24301441F06C71F00A7061C /* CartTableViewCell.swift in Sources */,
+				D24301461F06CD5000A7061C /* CartViewController.swift in Sources */,
 				D27F09A31F019E3E00DA7B55 /* Promotion.swift in Sources */,
 				D2500F711F0367D400FF5212 /* IngredientService.swift in Sources */,
 				D2DEA6CF1F04AC2C00DCD294 /* Extension.swift in Sources */,
 				D2AF623A1F03E029008D80D1 /* SandwichePresenter.swift in Sources */,
-				D27F09A51F01A15400DA7B55 /* SandwicheViewController.swift in Sources */,
+				D27F09A51F01A15400DA7B55 /* HomeSandwicheViewController.swift in Sources */,
 				D24DC8481F028BDD00B98411 /* ServiceType.swift in Sources */,
 				D24301401F0688A500A7061C /* PromotionTableViewCell.swift in Sources */,
-				D2AE58341F052B58005935F2 /* IngredientViewController.swift in Sources */,
+				D2AE58341F052B58005935F2 /* SandwicheIngredientViewController.swift in Sources */,
 				D24DC84B1F028C4100B98411 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
