@@ -10,9 +10,9 @@ import Moya
 import ObjectMapper
 import Moya_ObjectMapper
 
-class RequestService {
+class OrderService {
     
-    static let shared = RequestService()
+    static let shared = OrderService()
     
     let provider = MoyaProvider<ServiceType>()
     
@@ -37,13 +37,13 @@ class RequestService {
         }
     }
     
-//    /// Requesição de Pedido
+//    / Requesição de Pedido
 //    ///
 //    ///- Parameters:
 //    ///   - success: APllI retorna um pedido ou uma lista de pedido com os ingredientes.
 //    ///   - failure: API retorna um erro, o chamador da função deve tratar
 //    func pedirLanches(success: @escaping (_ Sandwiche: [Sandwiche]) -> Void, failure: @escaping (_ error: MoyaError?) -> Void){
-//        provider.request(.) { result in
+//        provider.request(.fazerPedido(id_sandwiche: ) { result in
 //            switch result {
 //            case let .success(response):
 //                do {

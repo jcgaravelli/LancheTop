@@ -10,23 +10,23 @@ import ObjectMapper
 
 class Order: Mappable {
     
-    var id: Int?
-    var sandwiches: [Sandwiche]?
+    var id_sandwiche: Int?
+    var name: String?
     var ingredients: [Int] = []
-    var promotion: Promotion?
-    var total: Double?
+    var promotions: [Int] = []
+    var total: Float?
+    
+    init() { }
     
     // MARK: JSON
     required init?(map: Map) { }
     
     func mapping(map: Map) {
-        self.id <- map["id"]
-        self.sandwiches <- map["sandwiches"]
+        self.id_sandwiche <- map["id_sandwiche"]
+        self.name <- map["name"]
         self.ingredients <- map["ingredients"]
-        self.promotion <- map["promotion"]
+        self.promotions <- map["promotions"]
         self.total <- map["total"]
     }
 }
 
-//lanche.ingredients.append(id_ingredient)
-//lanche.ingredients = lanche.ingredients.removeFirstEqualItem(id_ingredient)
