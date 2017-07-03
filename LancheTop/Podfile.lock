@@ -15,7 +15,6 @@ PODS:
   - Result (3.2.3)
 
 DEPENDENCIES:
-  - Alamofire
   - Kingfisher (~> 3.0)
   - Moya
   - Moya-ObjectMapper
@@ -29,6 +28,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
 
-PODFILE CHECKSUM: 666e939bd0c5f214954a1c39f9c5d72c29a4009d
+PODFILE CHECKSUM: 2007a8a96238719c4009b6825c4839c842de6a9b
 
 COCOAPODS: 1.2.1

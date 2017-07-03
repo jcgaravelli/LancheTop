@@ -7,7 +7,7 @@ target 'LancheTop' do
   use_frameworks!
 
   # Pods for LancheTop
-	pod 'Alamofire'
+  # pod 'Alamofire'
 	pod 'Moya'
 	pod 'ObjectMapper'
     pod 'Moya-ObjectMapper'
